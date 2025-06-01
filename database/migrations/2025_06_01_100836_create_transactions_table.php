@@ -25,7 +25,7 @@ return new class extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade');
             $table->foreign('subscription_id')->references('id')->on('subscriptions')->onDelete('cascade');
-            $table->foreighn('payment_gateway_id')->references('id')->on('payment_gateways')->onDelete('cascade');
+            $table->foreign('payment_gateway_id')->references('id')->on('payment_gateways')->onDelete('cascade');
         });
     }
 
